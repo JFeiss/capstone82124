@@ -4,6 +4,6 @@
     "checkJs": true,
     "allowJs": true,
     "module": "NodeNext",
-     "moduleResolution": "node",   
+     "moduleResolution": "NodeNext",   
   }
 }
