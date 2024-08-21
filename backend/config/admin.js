@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
   },
   transfer: {
     token: {
-      salt: env('TRANSFER_TOKEN_SALT'),
+      salt: env('TRANSFER_TOKEN_SALT', 'a3da8ef22ff499a66456726e97085a57'),
     },
   },
   flags: {
