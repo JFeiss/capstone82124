@@ -66,7 +66,7 @@ function RestaurantList(props) {
 
   if (error) {
     console.log(error)
-    return "Error loading my rest"};
+    return "Error loading"};
   if (loading) return <Loader />;
 
   if (data.restaurants.data && data.restaurants.data.length) {
