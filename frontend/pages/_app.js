@@ -3,7 +3,7 @@ import { AppProvider } from "@/context/AppContext";
 import "@/styles/globals.css";
 import Layout from "@/components/Layout";
 
-const API_URL = process.env.STRAPI_URL || "graphql";
+const API_URL = process.env.STRAPI_URL || "http://localhost:1337";
 
 export const client = new ApolloClient({
   uri: `${API_URL}/graphql`,
