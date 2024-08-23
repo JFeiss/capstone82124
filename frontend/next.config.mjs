@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
+    
       {
         protocol: "https",
         hostname: "capstone82124.onrender.com/graphql",
@@ -10,7 +10,6 @@ const nextConfig = {
         pathname: "/uploads/**",
       },
     ],
-  },
-};
+  };
 
 export default nextConfig;
