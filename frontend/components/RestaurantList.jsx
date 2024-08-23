@@ -34,9 +34,10 @@ function RestaurantCard({ data }) {
           height={300}
           width={300}
           src={`${process.env.STRAPI_URL || "https://capstone82124.onrender.com"}${
-            data.attributes.image.data[0]?.attributes?.url || ""
+           data.attributes.image.data[0].attributes.url
           }`}
-          alt=""        />
+          alt=""
+          />
         <div className="p-8">
             <h3 className="mb-3 font-heading text-xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
               {data.attributes.name}
