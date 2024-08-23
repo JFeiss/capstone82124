@@ -33,7 +33,7 @@ function RestaurantCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-          src={`${process.env.STRAPI_URL || "https://capstone82124.onrender.com/graphql"}${
+          srcset={`${process.env.STRAPI_URL || "https://capstone82124.onrender.com/graphql"}${
            data.attributes.image.data[0].attributes.url
           }`}
           alt=""
