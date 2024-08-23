@@ -52,8 +52,10 @@ function DishCard({ data }) {
           className="w-full rounded-2xl"
           height={300}
           width={300}
-         const imageUrl = `${process.env.STRAPI_URL || "https://capstone82124.onrender.com/graphql"}${data.attributes.image.data.attributes.url}`;
-<img src={imageUrl} alt="" />
+         src={`${process.env.STRAPI_URL || "http://127.0.0.1:1337"}${
+            data.attributes.image.data[0].attributes.url
+          }`}
+          alt="" />
           <div className="p-8">
           <div className="group inline-block mb-4" href="#">
             <h3 className="font-heading text-xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
