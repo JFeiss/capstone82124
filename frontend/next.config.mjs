@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
      remotePatterns: [
       {
-        protocol: "https",
-        hostname: "capstone82124.onrender.com/graphql",
+        protocol: "http",
+        hostname: "127.0.0.1",
         port: "1337",
         pathname: "/uploads/**",
       },
